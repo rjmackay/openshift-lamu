@@ -1,0 +1,3 @@
+[submodule "libs/Lamu"]
+	path = libs/Lamu
+	url = git://github.com/ushahidi/Lamu.git
