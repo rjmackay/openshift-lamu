@@ -15,10 +15,10 @@ return array
 	(
 		'type'       => 'MySQL',
 		'connection' => array(
-			'hostname'   => $_ENV['OPENSHIFT_MYSQL_DB_HOST'] . ':' . $_ENV['OPENSHIFT_MYSQL_DB_PORT'],
-			'database'   => $_ENV['OPENSHIFT_APP_NAME'],
-			'username'   => $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'],
-			'password'   => $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'],
+			'hostname'   => getenv('OPENSHIFT_MYSQL_DB_HOST') . ':' . getenv('OPENSHIFT_MYSQL_DB_PORT'),
+			'database'   => getenv('OPENSHIFT_APP_NAME'),
+			'username'   => getenv('OPENSHIFT_MYSQL_DB_USERNAME'),
+			'password'   => getenv('OPENSHIFT_MYSQL_DB_PASSWORD'),
 			'persistent' => FALSE,
 		),
 		'table_prefix' => '',
