@@ -9,6 +9,9 @@ if [ ! -d $OPENSHIFT_DATA_DIR/uploads ]; then
 fi
 
 ln -sf $OPENSHIFT_DATA_DIR/uploads $OPENSHIFT_REPO_DIR/php/_media/uploads
+mkdir $OPENSHIFT_REPO_DIR/libs/Lamu/application/cache
+mkdir $OPENSHIFT_REPO_DIR/libs/Lamu/application/logs
+chmod 777 $OPENSHIFT_REPO_DIR/libs/Lamu/application/cache $OPENSHIFT_REPO_DIR/libs/Lamu/application/logs
 
 set -e
 
