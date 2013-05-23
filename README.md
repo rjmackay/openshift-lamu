@@ -28,16 +28,9 @@ Notes
 =====
 
 GIT_ROOT/.openshift/action_hooks/deploy:
-    This script is executed with every 'git push'.  Feel free to modify this script
-    to learn how to use it to your advantage.  By default, this script will create
-    the database tables that this example uses.
-
-    If you need to modify the schema, you could create a file 
-    GIT_ROOT/.openshift/action_hooks/alter.sql and then use
-    GIT_ROOT/.openshift/action_hooks/deploy to execute that script (make sure to
-    back up your application + database w/ 'rhc app snapshot save' first :) )
+    This script is executed with every 'git push'.  This will do basic setup and run minion migrations.
 
 Security Considerations
 -----------------------
-Consult the documentation for best practices regarding securing your Ushahidi v3 installation.  OpenShift 
-automatically generates unique secret keys for your deployment into config files.
+This quickstart needs improvement to make  OpenShift automatically generate unique secret
+keys for your deployment and load them into config files.
