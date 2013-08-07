@@ -32,5 +32,5 @@ fi
 cp $OPENSHIFT_REPO_DIR/misc/database.php $OPENSHIFT_REPO_DIR/libs/Lamu/application/config/database.php
 
 # Run migrations up
-$OPENSHIFT_REPO_DIR/libs/Lamu/minion --task=migrations:run --group=3-0 --up
+$OPENSHIFT_REPO_DIR/libs/Lamu/minion --task=migrations:run --up
 
